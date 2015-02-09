@@ -84,14 +84,92 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         </section>
 
         <section>
-          <h2>What will we talking about Today?</h2>
-          <ul>
-            <li class="fragment">Docker</li>
-            <li class="fragment">hypervisor</li>
-            <li class="fragment">chroot jails</li>
-            <li class="fragment">the meaning of life</li>
-            <span class="fragment"> if we get to it </span>
-          </ul>
+          <h2 style="position: relative; bottom: 200px;">What will we talking about Today?</h2>
+
+          <section>
+          </section>
+
+          <section>
+            <h3>docker</h3>
+          </section>
+
+        </section>
+
+        <section>
+          <h2 style="position: relative; bottom: 200px;">As well as touching on</h2>
+
+          <section>
+          </section>
+
+          <section>
+            <h3>dockerhub</h3>
+          </section>
+
+          <section>
+            <h3>fig</h3>
+          </section>
+
+          <section>
+            <h3>docker swarm</h3>
+          </section>
+
+          <section>
+            <h3>docker compose</h3>
+          </section>
+
+          <section>
+            <h3>docker machine</h3>
+          </section>
+
+          <section>
+            <h3>and</h3>
+          </section>
+
+          <section>
+            <h3>rocket</h3>
+          </section>
+        </section>
+
+        <section>
+          <h2>So I can ge a feel for the room...</h2>
+        </section>
+
+        <section>
+          <h2 style="position: relative; bottom: 200px;">who has used</h2>
+
+          <section>
+          </section>
+
+          <section>
+            <h2>docker</h2>
+          </section>
+
+          <section>
+            <h2>any hypervisor tool</h2>
+            <span class="fragment fade-in">
+              <span class="fragment fade-out">Virtual box</span>
+            </span>
+
+            <span class="fragment fade-in">
+              <span class="fragment fade-out">kvm</span>
+            </span>
+
+            <span class="fragment fade-in">
+              <span class="fragment fade-out">vmware</span>
+            </span>
+          </section>
+
+          <section>
+            <h2>chroot jails</h2>
+          </section>
+
+          <section>
+            <h2>git</h2>
+          </section>
+        </section>
+
+        <section>
+          <h2>so what is docker</h2>
         </section>
 
         <section>
@@ -102,9 +180,11 @@ if( window.location.search.match( /print-pdf/gi ) ) {
             <li class="fragment">Application Containers</li>
           </ul>
           <aside class="notes">
+            would any one like to take a guess at what that means?
             make sure to ask about each thing
           </aside>
         </section>
+
 
         <section>
           <h2>Docker is not...</h2>
@@ -118,47 +198,77 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         </section>
 
         <section>
-          <h2 style="position: relative; bottom: 200px;">vocab</h2>
+          <h2>lets take a look that that those things one by one</h2>
+        </section>
+
         <section>
+          <section>
+            <h2>what is an application container</h2>
+          </section>
+
+          <section>
+            <h2>store all the dependency's all bundled together</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>what do we mean by light weight</h2>
+          </section>
+
+          <section>
+            <h2>dont need to emulat the entire os</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>what do we mean by portable</h2>
+          </section>
+
+          <section>
+            <h2>layers only need to move around the diffs</h2>
+          </section>
+        </section>
+
+        <section>
+          <h2 style="position: relative; bottom: 200px;">Vocab</h2>
           <aside class="notes">
             make sure to ask about each thing
           </aside>
         </section>
 
-        <section>
+        <section data-transition="zoom">
           <h2>Docker Server:</h2> The daemon that manages containers and images
         </section>
 
-        <section>
+        <section data-transition="zoom">
           <h2>Docker CLI:</h2> The docker command
         </section>
 
-        <section>
+        <section data-transition="zoom">
             <h2>Docker Hub:</h2> The docker image hosting service
         </section>
 
-        <section>
+        <section data-transition="zoom">
             <h2>Image:</h2> A read only file system
         </section>
 
-        <section>
+        <section data-transition="zoom">
               <h2>Base Image:</h2> An image without a parent
         </section>
 
-        <section>
+        <section data-transition="zoom">
                 <h2>Container:</h2> An instance of a Image
         </section>
 
-        <section>
+        <section data-transition="zoom">
                 <h2>Repository:</h2> a set of images
         </section>
 
-        <section>
+        <section data-transition="zoom">
                 <h2>Registry:</h2> a place the images are hosted(dockerhub)
         </section>
-
-        </section>
-        <!-- Example of nested vertical slides -->
 
         <section>
             <h2 class="fragment">now go and</h2>
@@ -195,10 +305,10 @@ Reveal.initialize({
   { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
   { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
   { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: 'http://code.jquery.com/jquery-2.1.1.min.js', async: true, condition: function() { return !!document.body.classList; } }
+  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+  { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+  { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+  { src: 'http://code.jquery.com/jquery-2.1.1.min.js', async: true, condition: function() { return !!document.body.classList; } }
   ]
 });
 
