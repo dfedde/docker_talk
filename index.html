@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
 
-    <title>reveal.js - The HTML Presentation Framework</title>
+    <title>Docker FTW</title>
 
-    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-    <meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="short docker presantation">
+    <meta name="author" content="Duncan Fedde">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -190,7 +190,11 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         </section>
 
         <section>
-          <h2>lets take a look that that those things one by one</h2>
+          <h2>lets take a look at those things one by one</h2>
+        </section>
+
+        <section>
+          <h2>first off</h2>
         </section>
 
         <section>
@@ -199,11 +203,11 @@ if( window.location.search.match( /print-pdf/gi ) ) {
           </section>
 
           <section>
-            <h2>isolated form other applications</h2>
+            <h2>contains everything it needs to run the application</h2>
           </section>
 
           <section>
-            <h2>contains everything it needs to run the application</h2>
+            <h2>isolated from other applications</h2>
           </section>
 
         </section>
@@ -211,6 +215,17 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         <section>
           <section>
             <h2>what do we mean by light weight</h2>
+          </section>
+
+          <section>
+            <div class="fragment" style="display:inline-block">
+              <h3>hypervisor vm</h3>
+              <img src="images/docker_vm.png"/>
+            </div>
+            <div class="fragment" style="display:inline-block;margin-left:50px">
+              <h3>Docker</h3>
+              <img  src="images/docker_docker.png"/>
+            </div>
           </section>
 
           <section>
@@ -224,7 +239,29 @@ if( window.location.search.match( /print-pdf/gi ) ) {
           </section>
 
           <section>
-            <h2>layers only need to move around the diffs</h2>
+            <h2>we are going to have to learn bit of how docker works</h2>
+          </section>
+
+          <section>
+            <div style="display:inline-block">
+              <img src="images/docker-filesystems-debian.png"/>
+            </div>
+          </section>
+
+          <section>
+            <div style="display:inline-block;">
+              <img src="images/docker-filesystems-debianrw.png"/>
+            </div>
+          </section>
+
+          <section>
+            <div style="display:inline-block;">
+              <img src="images/docker-filesystems-multilayer.png"/>
+            </div>
+          </section>
+
+          <section>
+            <h2>layers only need to move around the layers you don't have</h2>
           </section>
         </section>
 
